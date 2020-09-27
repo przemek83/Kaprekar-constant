@@ -2,6 +2,8 @@ SET(PROJECT_TEST ${PROJECT_NAME}-test )
 
 set(${PROJECT_TEST}_SOURCES
     QueryTest.cpp
+    ../kaprekar.h
+    ../kaprekar.cpp
     )
 
 add_executable(${PROJECT_TEST} ${${PROJECT_TEST}_SOURCES})

@@ -1,3 +1,5 @@
 #include "gtest/gtest.h"
 
-TEST(Test, exampleTest) { EXPECT_EQ(true, true); }
+#include "../kaprekar.h"
+
+TEST(Kaprekar, isRepdigit) { EXPECT_EQ(Kaprekar::isRepdigit(1000), false); }
