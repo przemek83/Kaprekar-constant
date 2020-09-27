@@ -1,5 +1,5 @@
 ## Kaprekar's constant
-Small application counting number of subtractions of two 4-digit numbers (current and reversed) before reaching number 6174 named Kaprekar's constant.
+Small application counting number of subtractions of two 4-digit numbers (current and reversed) before reaching number 6174. Number 6174 is named Kaprekar's constant.
 
 ## Table of content
 - [Getting Started](#getting-started)
@@ -14,14 +14,14 @@ Small application counting number of subtractions of two 4-digit numbers (curren
 This section describes briefly how to setup environment and build project.
 
 ### Prerequisites
-C++ compiler with C++17 support as a minimum, CMake 3.8+ and Git tool used for downloading Google Test library.
+C++ compiler with C++17 support as a minimum and CMake 3.8+. Additionally Git tool for downloading Google Test library as it is needed by test subproject.
 
 ### Building
 Recommended:  
 Use Cmake directly or your favorite IDE supporting CMake projects.  
 
 Alternative:  
-For building main project, without using of CMake, you can also use bare compiler:
+Use bare compiler for building project binary:
 ```shell
 $ g++ -Wall -std=c++17 -Isrc -O3 -c *.cpp
 $ g++ -Wall -std=c++17 -O3 -o kaprekar-constant *.o
@@ -36,8 +36,17 @@ $ g++ -Wall -std=c++17 -O3 -o kaprekar-constant *.o
 | QtCreator | 4.12.0 | 4.13.0 |
 
 ## Usage
-Project binary expects data containing 4 digit numbers (one per line) on std in.  
-Example usages:  
+Application expects on std in lines containing 4 digit numbers.  
+Example input:
+```
+6174
+4223
+2088
+8532
+1112
+1111
+```
+Examples of usage:  
 1. Pass example file from repo:
     ```shell
     $ ./kaprekar-constant < testFile.txt
@@ -67,7 +76,7 @@ Example usages:
     -1
     ```
 ## Testing
-Project contains test created using Goggle Test framework. After compiling test can be launched via IDE or directly from console. Example run:
+Project contains test subproject based on Goggle Test framework. Compile testing subproject and launch tests via IDE or directly from console. Example run:
 ```
 $ ./kaprekar-constant-test
 (...)
@@ -89,5 +98,4 @@ $ ./kaprekar-constant-test
 ```
 
 ## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+Project is distributed under the MIT License. See `LICENSE` for more information.
