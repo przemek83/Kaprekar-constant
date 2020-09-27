@@ -2,7 +2,13 @@
 Small application counting number of subtractions of two 4-digit numbers (current and reversed) before reaching number 6174 named Kaprekar's constant.
 
 ## Table of content
-TODO
+- [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Building](#building)
+- [Built with](#built-with)
+- [Usage](#usage)
+- [Testing](#testing)
+- [License](#license)
 
 ## Getting Started
 This section describes briefly how to setup environment and build project.
