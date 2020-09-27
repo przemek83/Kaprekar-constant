@@ -24,17 +24,15 @@
 
 int main()
 {
-    using namespace Kaprekar;
-
     unsigned int number{0};
     while (std::cin >> number)
     {
-        if (isRepdigit(number))
+        if (Kaprekar::isRepdigit(number))
         {
             std::cout << "-1" << std::endl;
             continue;
         }
-        std::cout << countSteps(number) << std::endl;
+        std::cout << Kaprekar::countSteps(number) << std::endl;
     }
     return 0;
 }
