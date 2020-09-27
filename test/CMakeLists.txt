@@ -1,7 +1,7 @@
 SET(PROJECT_TEST ${PROJECT_NAME}-test )
 
 set(${PROJECT_TEST}_SOURCES
-    QueryTest.cpp
+    KaprekarTest.cpp
     ../kaprekar.h
     ../kaprekar.cpp
     )
