@@ -33,8 +33,36 @@ $ g++ -Wall -std=c++17 -O3 -o kaprekar-constant *.o
 | QtCreator | 4.12.0 | 4.13.0 |
 
 ## Usage
-TODO
-
+Project binary expects data containing 4 digit numbers (one per line) on std in.  
+Example usages:  
+1. Pass example file from repo:
+    ```shell
+    $ ./kaprekar-constant < testFile.txt
+    0
+    3
+    2
+    1
+    5
+    -1
+    ```
+2. Use directly:
+    ```shell
+    $ ./kaprekar-constant
+    1234
+    3
+    4321
+    3
+    ```
+3. Pipe input:
+    ```shell
+    $ cat testFile.txt | ./kaprekar-constant
+    0
+    3
+    2
+    1
+    5
+    -1
+    ```
 ## Testing
 TODO
 
