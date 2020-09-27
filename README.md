@@ -47,7 +47,7 @@ Example input:
 1111
 ```
 Examples of usage:  
-1. Pass example file from repo:
+1. Pass example file named `testFile.txt` from project repo:
     ```shell
     $ ./kaprekar-constant < testFile.txt
     0
@@ -57,7 +57,7 @@ Examples of usage:
     5
     -1
     ```
-2. Use directly:
+2. Use binary directly:
     ```shell
     $ ./kaprekar-constant
     1234
