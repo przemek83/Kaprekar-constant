@@ -1,5 +1,8 @@
 #include "kaprekar.h"
 
+#include <algorithm>
+#include <array>
+
 namespace Kaprekar
 {
 const unsigned int DIGITS_COUNT{4};

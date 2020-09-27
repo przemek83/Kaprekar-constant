@@ -20,6 +20,8 @@
 // 5
 // -1
 
+#include <iostream>
+
 #include "kaprekar.h"
 
 int main()
