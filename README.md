@@ -64,7 +64,26 @@ Example usages:
     -1
     ```
 ## Testing
-TODO
+Project contains test created using Goggle Test framework. After compiling test can be launched via IDE or directly from console. Example run:
+```
+$ ./kaprekar-constant-test
+(...)
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from Kaprekar
+[ RUN      ] Kaprekar.isRepdigitNegative
+[       OK ] Kaprekar.isRepdigitNegative (0 ms)
+[ RUN      ] Kaprekar.isRepdigitPositive
+[       OK ] Kaprekar.isRepdigitPositive (0 ms)
+[ RUN      ] Kaprekar.countSteps
+[       OK ] Kaprekar.countSteps (0 ms)
+[----------] 3 tests from Kaprekar (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+
+```
 
 ## License
 
