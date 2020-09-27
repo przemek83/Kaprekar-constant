@@ -17,7 +17,10 @@ This section describes briefly how to setup environment and build project.
 C++ compiler with C++17 support as a minimum, CMake 3.8+ and Git tool used for downloading Google Test library.
 
 ### Building
+Recommended:  
 Use Cmake directly or your favorite IDE supporting CMake projects.  
+
+Alternative:  
 For building main project, without using of CMake, you can also use bare compiler:
 ```shell
 $ g++ -Wall -std=c++17 -Isrc -O3 -c *.cpp
