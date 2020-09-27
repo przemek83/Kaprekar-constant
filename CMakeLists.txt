@@ -28,7 +28,13 @@ add_subdirectory(${CMAKE_BINARY_DIR}/googletest-src
 configure_file(${CMAKE_SOURCE_DIR}/testFile.txt 
     ${CMAKE_BINARY_DIR}/testFile.txt COPYONLY)
 
-add_executable(${CMAKE_PROJECT_NAME} main.cpp)
+set(${PROJECT_NAME}_SOURCES
+    main.cpp
+    kaprekar.h
+    kaprekar.cpp
+    )
+
+add_executable(${CMAKE_PROJECT_NAME} ${${PROJECT_NAME}_SOURCES})
 
 enable_testing()
 add_subdirectory(test)
