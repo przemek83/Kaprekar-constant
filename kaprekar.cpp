@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <array>
+#include <numeric>
 
 namespace Kaprekar
 {
@@ -11,10 +12,9 @@ static const unsigned int DECIMAL_BASE{10};
 static unsigned int reverseNumber(unsigned int number)
 {
     unsigned int reverse{0};
-    unsigned int reminder{0};
     for (unsigned int i = 0; i < DIGITS_COUNT; ++i)
     {
-        reminder = number % DECIMAL_BASE;
+        unsigned int reminder{number % DECIMAL_BASE};
         reverse = reverse * DECIMAL_BASE + reminder;
         number /= DECIMAL_BASE;
     }
@@ -34,10 +34,10 @@ static std::array<unsigned int, DIGITS_COUNT> toArray(unsigned int number)
 
 static unsigned int toNumber(std::array<unsigned int, DIGITS_COUNT> array)
 {
-    unsigned int number{0};
-    for (auto num : array)
-        number = number * DECIMAL_BASE + num;
-    return number;
+    return std::accumulate(array.begin(), array.end(), 0U,
+                           [](unsigned int sum, unsigned int elem) {
+                               return sum * DECIMAL_BASE + elem;
+                           });
 }
 
 unsigned int countSteps(unsigned int number)
