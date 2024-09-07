@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 
-#include "../kaprekar.h"
+#include <src/kaprekar.h>
 
 TEST(Kaprekar, isRepdigitNegative)
 {
