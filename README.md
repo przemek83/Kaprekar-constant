@@ -8,10 +8,7 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=przemek83_kaprekar-constant&metric=coverage)](https://sonarcloud.io/summary/new_code?id=przemek83_kaprekar-constant)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=przemek83_kaprekar-constant&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=przemek83_kaprekar-constant)
 
-## Kaprekar's constant
-Small application counting number of subtractions of two 4-digit numbers (with ascending and descending digits) before reaching number 6174. Number 6174 is named Kaprekar's constant.
-
-## Table of content
+# Table of content
 - [Problem description](#problem-description)
 - [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
@@ -21,7 +18,10 @@ Small application counting number of subtractions of two 4-digit numbers (with a
 - [Testing](#testing)
 - [License](#license)
 
-## Problem description
+# About
+Small application counting number of subtractions of two 4-digit numbers (with ascending and descending digits) before reaching number 6174. Number 6174 is named Kaprekar's constant.
+
+# Problem description
 Given 4 digit number find number of steps to reach number 6174 or -1 if it is not possible. Each step is subtraction of 2 numbers created from current number by ordering digits descending and ascending. If 6174 is reached then current step counter is returned. If subtraction result is not equal 6174 than subtraction result is taken as current number in next step.
 
 Example 1:  
@@ -44,32 +44,29 @@ More info:
 * https://en.wikipedia.org/wiki/6174_%28number%29
 * https://en.wikipedia.org/wiki/Repdigit
 
-## Getting Started
+# Getting Started
 This section describes briefly how to setup environment and build project.
 
-### Prerequisites
-C++ compiler with C++17 support as a minimum and CMake 3.8+. Additionally Git tool for downloading Google Test library as it is needed by test subproject.
+## Prerequisites
+C++ compiler with C++17 support as a minimum and CMake 3.14+. Additionally Git tool for downloading Google Test library as it is needed by test subproject.
 
-### Building
-Recommended:  
-Use Cmake directly or your favorite IDE supporting CMake projects.  
+## Building
+Clone and use CMake directly or via any IDE supporting it. CMake should:
+- configure everything automatically,
+- compile and create binaries.
 
-Alternative:  
-Use bare compiler for building project binary:
-```shell
-$ g++ -Wall -std=c++17 -O3 -c *.cpp
-$ g++ -Wall -std=c++17 -O3 -o kaprekar-constant *.o
-```
+As a result of compilation, binary for simulations and binary for testing should be created.
 
-## Built with
+## Used tools and libs
 | Tool |  Windows 10 | Lubuntu 20.04 |
 | --- | --- | --- |
-| GCC | 7.3.0 | 9.3.0 |
-| Cmake | 3.14 | 3.17 |
-| Git | 2.20 | 2.25 |
-| QtCreator | 4.12.0 | 4.13.0 |
+| OS version | 10 22H2 | 24.04 |
+| GCC | 13.1.0 | 13.2.0 |
+| Cmake | 3.30.2 | 3.28.3 |
+| Git | 2.46.0 | 2.43.0 |
+| GoogleTest | 1.15.2 | 1.15.2 |
 
-## Usage
+# Usage
 Application expects on std in lines containing 4 digit numbers.  
 Example input:
 ```
@@ -109,7 +106,7 @@ Examples of usage:
     5
     -1
     ```
-## Testing
+# Testing
 Project contains test subproject based on Goggle Test framework. Compile testing subproject and launch tests via IDE or directly from console. Example run:
 ```
 $ ./kaprekar-constant-test
@@ -131,5 +128,5 @@ $ ./kaprekar-constant-test
 
 ```
 
-## License
+# License
 Project is distributed under the MIT License. See `LICENSE` for more information.
