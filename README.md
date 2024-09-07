@@ -9,11 +9,12 @@
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=przemek83_kaprekar-constant&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=przemek83_kaprekar-constant)
 
 # Table of content
+- [About](#about)
 - [Problem description](#problem-description)
 - [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Building](#building)
-- [Built with](#built-with)
+   * [Prerequisites](#prerequisites)
+   * [Building](#building)
+   * [Used tools and libs](#used-tools-and-libs)
 - [Usage](#usage)
 - [Testing](#testing)
 - [License](#license)
