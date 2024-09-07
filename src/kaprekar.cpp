@@ -23,7 +23,7 @@ static unsigned int reverseNumber(unsigned int number)
 
 static std::array<unsigned int, DIGITS_COUNT> toArray(unsigned int number)
 {
-    std::array<unsigned int, DIGITS_COUNT> array{};
+    std::array<unsigned int, DIGITS_COUNT> array;
     for (size_t i = 0; i < DIGITS_COUNT; ++i)
     {
         array.at(i) = number % DECIMAL_BASE;
