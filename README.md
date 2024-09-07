@@ -1,3 +1,13 @@
+[![Build & test](https://github.com/przemek83/kaprekar-constant/actions/workflows/buld-and-test.yml/badge.svg)](https://github.com/przemek83/kaprekar-constant/actions/workflows/buld-and-test.yml)
+[![CodeQL](https://github.com/przemek83/kaprekar-constant/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/przemek83/kaprekar-constant/actions/workflows/github-code-scanning/codeql)
+[![codecov](https://codecov.io/gh/przemek83/kaprekar-constant/graph/badge.svg?token=0WWJZICVVS)](https://codecov.io/gh/przemek83/kaprekar-constant)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=przemek83_kaprekar-constant&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=przemek83_kaprekar-constant)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=przemek83_kaprekar-constant&metric=bugs)](https://sonarcloud.io/summary/new_code?id=przemek83_kaprekar-constant)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=przemek83_kaprekar-constant&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=przemek83_kaprekar-constant)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=przemek83_kaprekar-constant&metric=coverage)](https://sonarcloud.io/summary/new_code?id=przemek83_kaprekar-constant)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=przemek83_kaprekar-constant&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=przemek83_kaprekar-constant)
+
 ## Kaprekar's constant
 Small application counting number of subtractions of two 4-digit numbers (with ascending and descending digits) before reaching number 6174. Number 6174 is named Kaprekar's constant.
 
