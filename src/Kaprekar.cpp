@@ -15,7 +15,7 @@ static unsigned int reverseNumber(unsigned int number)
     for (unsigned int i = 0; i < DIGITS_COUNT; ++i)
     {
         unsigned int reminder{number % DECIMAL_BASE};
-        reverse = reverse * DECIMAL_BASE + reminder;
+        reverse = (reverse * DECIMAL_BASE) + reminder;
         number /= DECIMAL_BASE;
     }
     return reverse;
@@ -36,7 +36,7 @@ static unsigned int toNumber(std::array<unsigned int, DIGITS_COUNT> array)
 {
     return std::accumulate(array.begin(), array.end(), 0U,
                            [](unsigned int sum, unsigned int elem) {
-                               return sum * DECIMAL_BASE + elem;
+                               return (sum * DECIMAL_BASE) + elem;
                            });
 }
 
@@ -50,7 +50,7 @@ unsigned int countSteps(unsigned int number)
         std::sort(array.begin(), array.end());
         unsigned int ascendingNumber{toNumber(array)};
         number = reverseNumber(ascendingNumber) - ascendingNumber;
-        steps++;
+        ++steps;
     }
     return steps;
 }
