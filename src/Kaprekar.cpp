@@ -1,10 +1,10 @@
-#include "kaprekar.h"
+#include "Kaprekar.h"
 
 #include <algorithm>
 #include <array>
 #include <numeric>
 
-namespace Kaprekar
+namespace kaprekar
 {
 const unsigned int DIGITS_COUNT{4};
 static const unsigned int DECIMAL_BASE{10};
@@ -61,4 +61,4 @@ bool isRepdigit(unsigned int number)
     return number % repdigitDivider == 0;
 }
 
-}  // namespace Kaprekar
+}  // namespace kaprekar

@@ -20,8 +20,8 @@ endif()
 file(COPY ${CMAKE_SOURCE_DIR}/testFile.txt DESTINATION ${CMAKE_BINARY_DIR})
 
 set(${PROJECT_NAME}_SOURCES
-    src/kaprekar.h
-    src/kaprekar.cpp
+    src/Kaprekar.h
+    src/Kaprekar.cpp
     )
 
 add_library (${PROJECT_NAME}-lib STATIC ${${PROJECT_NAME}_SOURCES})

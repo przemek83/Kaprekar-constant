@@ -1,18 +1,18 @@
 #include <iostream>
 
-#include "kaprekar.h"
+#include "Kaprekar.h"
 
 int main()
 {
     unsigned int number{0};
     while (std::cin >> number)
     {
-        if (Kaprekar::isRepdigit(number))
+        if (kaprekar::isRepdigit(number))
         {
-            std::cout << "-1" << std::endl;
+            std::cout << "-1" << "\n";
             continue;
         }
-        std::cout << Kaprekar::countSteps(number) << std::endl;
+        std::cout << kaprekar::countSteps(number) << "\n";
     }
     return 0;
 }
