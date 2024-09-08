@@ -8,11 +8,9 @@ int main()
     while (std::cin >> number)
     {
         if (kaprekar::isRepdigit(number))
-        {
             std::cout << "-1" << "\n";
-            continue;
-        }
-        std::cout << kaprekar::countSteps(number) << "\n";
+        else
+            std::cout << kaprekar::countSteps(number) << "\n";
     }
     return 0;
 }

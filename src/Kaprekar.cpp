@@ -58,7 +58,7 @@ unsigned int countSteps(unsigned int number)
 bool isRepdigit(unsigned int number)
 {
     const unsigned int repdigitDivider{1111};
-    return number % repdigitDivider == 0;
+    return (number % repdigitDivider) == 0;
 }
 
 }  // namespace kaprekar
