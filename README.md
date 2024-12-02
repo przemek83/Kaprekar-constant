@@ -110,7 +110,7 @@ Examples of usage:
 # Testing
 The project contains a test subproject based on Goggle Test framework. Compile testing subproject and launch tests via IDE or directly from the console. Example run:
 ```
-$ ./kaprekar-constant-test
+$ ./kaprekar-constant-tests
 (...)
 [==========] Running 3 tests from 1 test suite.
 [----------] Global test environment set-up.
